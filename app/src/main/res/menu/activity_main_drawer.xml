@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item android:title="Constraint Layout v1.1">
+        <menu>
+            <item
+                android:id="@+id/constraint_group"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Groups" />
+            <item
+                android:id="@+id/constraint_barrier"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="Barrier" />
+            <item
+                android:id="@+id/constraint_chains"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Chains" />
+            <item
+                android:id="@+id/constraint_percent"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Percent" />
+            <item
+                android:id="@+id/constraint_circular"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Circular" />
+        </menu>
+    </item>
+
+</menu>

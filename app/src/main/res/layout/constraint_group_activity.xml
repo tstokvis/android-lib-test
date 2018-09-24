@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_1"
+        app:constraint_referenced_ids="group_1_textview,group_1_imageview"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_2"
+        app:constraint_referenced_ids="group_2_textview,group_2_imageview"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_3"
+        app:constraint_referenced_ids="group_3_textview,group_3_imageview"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+    <TextView
+        android:id="@+id/group_1_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Group 1 TextView"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/group_2_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Group 2 TextView"
+        app:layout_constraintLeft_toRightOf="@id/group_1_textview"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/group_3_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Group 3 TextView"
+        app:layout_constraintLeft_toRightOf="@id/group_2_textview"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/group_3_imageview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@id/group_1_textview"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="10dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <ImageView
+        android:id="@+id/group_1_imageview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@id/group_3_imageview"
+        app:layout_constraintLeft_toRightOf="@id/group_3_imageview"
+        android:background="@color/colorAccent"/>
+
+    <ImageView
+        android:id="@+id/group_2_imageview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@id/group_1_imageview"
+        app:layout_constraintLeft_toRightOf="@id/group_1_imageview"
+        android:layout_marginStart="10dp"
+        android:background="@color/colorPrimary"/>
+
+
+    <Button
+        android:id="@+id/group_1_button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Group 1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/group_2_button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Group 2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/group_1_button" />
+
+    <Button
+        android:id="@+id/group_3_button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Group 3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/group_2_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

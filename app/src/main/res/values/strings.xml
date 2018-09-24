@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TestApplication</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="long_Text">When you have several views that may change size at runtime, you can use a barrier to constrain elements . A barrier is positioned at the start, top, end, or bottom of several elements. You can think of it as a way of making a virtual group — virtual because it doesn’t add this group to view hierarchy.
+
+Barriers are really useful when you’re laying out internationalized strings or displaying user generated content whose size you cannot predict. The barrier will always position itself just outside the virtual group, and you can use it to constrain other views. In this example, the right view is constrained to always be to the end of the largest text view.
+Groups
+Sometimes you need to show or hide several elements at once. To support this, Constraint Layout added groups.
+A group doesn’t add a level to the view hierarchy — it’s really just a way to tag views. In the example below, we’re tagging profile_name and profile_image to be referenced by the id profile.
+This is useful when you have several elements that are shown or displayed together.
+Once you’ve defined the group profile you can apply visibility to the group, and it’ll be applied to both profile_name and profile_image.
+profile.visibility = GONE
+profile.visibility = VISIBLE
+Circular Constraints
+In Constraint Layout most constraints are specified by the screen dimensions — horizontal and vertical. In Constraint Layout 1.1 there’s a new type of constraint ,constraintCircle, that lets you specify constraints along a circle. Instead of providing horizontal and vertical margins, you specify the angle and radius of a circle. This is useful for views that are offset at an angle like a radial menu!</string>
+</resources>
